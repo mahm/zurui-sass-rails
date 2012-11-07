@@ -1,0 +1,53 @@
+//--------------------------------------------------------------------------------
+// Cheat lines
+@mixin zurui-line-top($op1:.2,$op2:.3)
+  border-top: 1px solid rgba(0, 0, 0, $op1)
+  @include box-shadow(rgba(255, 255, 255, $op2) 0 1px 0 inset)
+
+@mixin zurui-line-left($op1:.2,$op2:.3)
+  border-left: 1px solid rgba(0, 0, 0, $op1)
+  @include box-shadow(rgba(255, 255, 255, $op2) -1px 0 0)
+
+@mixin zurui-line-right($op1:.2,$op2:.3)
+  border-right: 1px solid rgba(0, 0, 0, $op1)
+  @include box-shadow(rgba(255, 255, 255, $op2) -1px 0 0 inset)
+
+@mixin zurui-line-bottom($op1:.2,$op2:.3)
+  border-bottom: 1px solid rgba(0, 0, 0, $op1)
+  @include box-shadow(rgba(255, 255, 255, $op2) 0 1px 0)
+
+//--------------------------------------------------------------------------------
+// Cheat font shadows
+@mixin zurui-ts-000($op:.4)
+  text-shadow: 1px -1px rgba(0, 0, 0, $op)
+
+@mixin zurui-ts-fff($op:.7)
+  text-shadow: -1px 1px rgba(0, 0, 0, $op)
+
+//--------------------------------------------------------------------------------
+// Cheat gradation
+@mixin zurui-gradient-top-lighten($color:#666, $lighten:10%)
+  background-color: $color
+  @include filter-gradient(lighten($color, $lighten), $color, vertical)
+  @include background-image(linear-gradient(lighten($color, $lighten) 0%, $color 100%))
+
+@mixin zurui-gradient-top-darken($color:#666, $darken:10%)
+  background-color: $color
+  @include filter-gradient(darken($color, $darken), $color, vertical)
+  @include background-image(linear-gradient(darken($color, $darken) 0%, $color 100%))
+
+//--------------------------------------------------------------------------------
+// Cheat box shadow
+@mixin zurui-box-outer($op1:2px)
+  @include box-shadow(rgba(0, 0, 0, .15) 0 0 $op1)
+
+@mixin zurui-box-inner($op1:20px)
+  @include box-shadow(rgba(0, 0, 0, .2) 0 0 $op1 inset)
+
+@mixin zurui-box-deboss($border:.1, $shadow:.1, $highlight:1)
+  border: 1px solid rgba(0, 0, 0, $border)
+  @include box-shadow(rgba(0, 0, 0, $shadow) -1px 1px 2px inset, rgba(255, 255, 255, $highlight) -1px 1px 0)
+
+@mixin zurui-box-emboss($border:.15, $shadow:.05, $highlight:1)
+  border: 1px solid rgba(0, 0, 0, $border)
+  @include box-shadow(rgba(0, 0, 0, $shadow) -1px 1px 0, rgba(255, 255, 255, $highlight) -1px -1px 0 inset)
