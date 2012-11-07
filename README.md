@@ -1,24 +1,31 @@
-# Zurui::Sass::Rails
+# zurui-sass-rails
 
-TODO: Write a gem description
+[@ken_c_lo](https://twitter.com/ken_c_lo)さんの[ズルいデザインテクニック](https://speakerdeck.com/ken_c_lo/zurui-design)のMixinをまとめたGemです。
 
 ## Installation
 
-Add this line to your application's Gemfile:
+1) Add this to your `Gemfile`:
 
-    gem 'zurui-sass-rails'
+```ruby
+group :assets do
+  gem 'sass-rails'
+  gem 'compass-rails'
+  gem 'zurui-sass-rails'
+end
+```
 
-And then execute:
+2) Add this to your `base.css.sass`:
 
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install zurui-sass-rails
+```sass
+@import compass/utilities
+@import compass/css3
+@import zurui-sass
+```
 
 ## Usage
 
-TODO: Write usage instructions here
+- [Zurui Sass Sample](http://zurui-sample.herokuapp.com/)
+- [Zurui Sass Sample(Github)](http://github.com/mahm/zurui-sample)
 
 ## Contributing
 
