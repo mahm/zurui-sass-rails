@@ -52,14 +52,3 @@
   border: 1px solid rgba(0, 0, 0, $border)
   @include box-shadow(rgba(0, 0, 0, $shadow) -1px 1px 0, rgba(255, 255, 255, $highlight) -1px -1px 0 inset)
 
-//--------------------------------------------------------------------------------
-// Cheat liner-gradient
-@mixin zurui-gradient-top-lighten($color : #666, $lighten: 10%)
-  background-color: $color
-  +filter-gradient(lighten($color, $lighten), $color,vertical)
-  +background-image(linear-gradient(lighten($color, $lighten) 0%, $color 100%))
-
-@mixin zurui-gradient-top-darken($color : #666, $darken: 10%)
-  background-color: $color
-  +filter-gradient(darken($color, $darken), $color,vertical)
-  +background-image(linear-gradient(darken($color, $darken) 0%, $color 100%))
