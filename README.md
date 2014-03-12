@@ -26,12 +26,16 @@ end
 
 3) Enjoy!
 
-### Rails以外（Middlemanなど）でお使いの方向け
+### Middlemanユーザー向け
+
+https://github.com/mahm/zurui-sass-middleman をご利用下さい。
+
+### 上記以外をお使いの方向け
 
 1) 以下のコマンドを実行して、ローカルに`_zurui-sass.sass`をダウンロードして下さい:
 
 ```
-curl https://raw.github.com/mahm/zurui-sass-rails/master/vendor/assets/stylesheets/_zurui-sass.sass > _zurui-sass.sass
+curl https://raw.github.com/mahm/zurui-sass/_zurui-sass.sass > _zurui-sass.sass
 ```
 
 2) Compassの使える環境で`_zurui-sass.sass`をインポートしてお使いください:
