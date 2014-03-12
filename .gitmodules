@@ -1,0 +1,3 @@
+[submodule "vendor/assets/stylesheets/zurui-sass"]
+	path = vendor/assets/stylesheets/zurui-sass
+	url = git@github.com:mahm/zurui-sass.git
